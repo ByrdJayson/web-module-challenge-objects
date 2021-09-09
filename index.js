@@ -36,6 +36,9 @@ Test your createMenuItems function by doing the following:
 
 const hotdog = createMenuItem('hotdog', 10, 'lunch');
 
+console.log(createMenuItem('Chicken Sandwhich', 10, 'lunch'));
+console.log(createMenuItem('spaghetti', 5, 'dinner'));
+console.log(createMenuItem('Fries', 5, 'side'));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
