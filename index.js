@@ -110,8 +110,16 @@ Write a function that creates an object with name, rating, feedback, add the new
   4. should return the resulting array
 */
 
-function addReview(array, newName, newRating, newReview){
-  /*Your Code Here */
+function addReview(array, name, rating, review){
+  let reviewObject = {
+    name: `${name}`,
+    rating: `${rating}`,
+    review: `${review}`
+  };
+
+  array.push(reviewObject);
+  return array;
+  
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
