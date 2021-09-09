@@ -85,7 +85,7 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
-console.log(reviews[6]);
+console.log(reviews[5]);
 
 
 
@@ -110,7 +110,7 @@ Write a function that creates an object with name, rating, feedback, add the new
   4. should return the resulting array
 */
 
-function addReview(/*Your Code Here */){
+function addReview(array, newName, newRating, newReview){
   /*Your Code Here */
 }
 
@@ -125,8 +125,12 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
+function getReviewByIndex(array, index) {
+  for(let i = 0; i < array.length - 1; i++){
+    if(i === index){
+      return `${array[i].name} gave the restaurant a ${array[i].rating} star review, and their feedback was: ${array[i].feedback}`
+    }
+  }
 }
 
 
