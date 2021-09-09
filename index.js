@@ -113,8 +113,8 @@ Write a function that creates an object with name, rating, feedback, add the new
 function addReview(array, name, rating, review){
   let reviewObject = {
     name: `${name}`,
-    rating: `${rating}`,
-    review: `${review}`
+    rating: rating,
+    feedback: `${review}`
   };
 
   array.push(reviewObject);
